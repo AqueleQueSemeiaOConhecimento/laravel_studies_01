@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/admin', [AdminController::class,'index'])->name('admin');
+Route::get('/teste/{value}', [MainController::class, 'teste']);
